@@ -162,7 +162,7 @@ Napiszmy go tym razem w pliku a nie w interaktywnej konsoli IRB’a.
 
 Aby wyjść z IRB’a wpisz “quit”, “exit” albo po prostu naciśnij Control-D.
 
-#!/usr/bin/env ruby
+"#!/usr/bin/env ruby
 
 class MegaGreeter
   attr_accessor :names
@@ -221,7 +221,7 @@ if __FILE__ == $0
   mg.names = nil
   mg.say_hi
   mg.say_bye
-end
+end"
 Zapisz ten plik pod nazwą “ri20min.rb”, i uruchom go wpisując “ruby ri20min.rb”. Wynik poniżej:
 
 Hello World!
@@ -240,7 +240,7 @@ Patrząc bliżej na nasz program, zauważamy początkowe linie, które zaczynaj�
 
 Nasza metoda say_hi stała się trochę bardziej skomplikowana:
 
-# Powiedz hi wszystkim
+Powiedz hi wszystkim
 def say_hi
   if @names.nil?
     puts "..."
@@ -278,7 +278,7 @@ To działą, ale nie jest zbyt eleganckie. Potrzebujesz tu tymczasowej zmiennej 
 Bloki, Błyszcząca Iskra Rubiego
 Prawdziwa potęga bloków ujawnia się kiedy mamy do czynienia ze strukturami bardziej skomplikowanymi niż listy. Poza obsługą prostej funkcjonalności w metodzie, możesz także obsłużyć wstępne ustawienia, zakończenie i błędy – wszystko ukryte przed użytkownikiem twoich metod.
 
-# Powiedz wszystkim "do widzenia"
+Powiedz wszystkim "do widzenia"
 def say_bye
   if @names.nil?
     puts "..."
